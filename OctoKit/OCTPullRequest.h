@@ -14,7 +14,23 @@
 // The webpage URL for this pull request.
 @property (nonatomic, copy, readonly) NSURL *HTMLURL;
 
+// The diff URL for this pull request.
+@property (nonatomic, copy, readonly) NSURL *diffURL;
+
+// The patch URL for this pull request.
+@property (nonatomic, copy, readonly) NSURL *patchURL;
+
+// The issue URL for this pull request.
+@property (nonatomic, copy, readonly) NSURL *issueURL;
+
 // The title of this pull request.
 @property (nonatomic, copy, readonly) NSString *title;
+
+// The body text for this pull request.
+@property (nonatomic, copy, readonly) NSString *body;
+
+// Whether or not the pull request is open.
+@property (nonatomic, readonly) isOpen;
+
 
 @end
