@@ -21,6 +21,12 @@
 		8829F2C017A0DF5300F06991 /* OCTAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8829F2BD17A0DF5300F06991 /* OCTAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8829F2C117A0DF5300F06991 /* OCTAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8829F2BE17A0DF5300F06991 /* OCTAuthorization.m */; };
 		8829F2C217A0DF5300F06991 /* OCTAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8829F2BE17A0DF5300F06991 /* OCTAuthorization.m */; };
+		7A5503DA17D50120007E8D0E /* OCTCommit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5503D817D50120007E8D0E /* OCTCommit.h */; };
+		7A5503DB17D50120007E8D0E /* OCTCommit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5503D817D50120007E8D0E /* OCTCommit.h */; };
+		7A5503DC17D50120007E8D0E /* OCTCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5503D917D50120007E8D0E /* OCTCommit.m */; };
+		7A5503DD17D50120007E8D0E /* OCTCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5503D917D50120007E8D0E /* OCTCommit.m */; };
+		7A5503DE17D50120007E8D0E /* OCTCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5503D917D50120007E8D0E /* OCTCommit.m */; };
+		7A5503DF17D50120007E8D0E /* OCTCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5503D917D50120007E8D0E /* OCTCommit.m */; };
 		8848E19D16AF630B005449AB /* OCTNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 8848E19B16AF630B005449AB /* OCTNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8848E19E16AF630B005449AB /* OCTNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 8848E19B16AF630B005449AB /* OCTNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8848E19F16AF630B005449AB /* OCTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848E19C16AF630B005449AB /* OCTNotification.m */; };
@@ -576,6 +582,8 @@
 		8813687317A1AD1E00F74214 /* authorizations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = authorizations.json; sourceTree = "<group>"; };
 		8829F2BD17A0DF5300F06991 /* OCTAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAuthorization.h; sourceTree = "<group>"; };
 		8829F2BE17A0DF5300F06991 /* OCTAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAuthorization.m; sourceTree = "<group>"; };
+		7A5503D817D50120007E8D0E /* OCTCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTCommit.h; sourceTree = "<group>"; };
+		7A5503D917D50120007E8D0E /* OCTCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTCommit.m; sourceTree = "<group>"; };
 		8848E19B16AF630B005449AB /* OCTNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTNotification.h; sourceTree = "<group>"; };
 		8848E19C16AF630B005449AB /* OCTNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTNotification.m; sourceTree = "<group>"; };
 		88746BCE17FA0A2C0005888A /* OCTCommitTreeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTCommitTreeEntry.h; sourceTree = "<group>"; };
@@ -1162,6 +1170,8 @@
 		D08B5999169E3E74006003B8 /* Commits */ = {
 			isa = PBXGroup;
 			children = (
+				7A5503D817D50120007E8D0E /* OCTCommit.h */,
+				7A5503D917D50120007E8D0E /* OCTCommit.m */,
 				D0872129169E395F00016ACA /* OCTCommitComment.h */,
 				D087212A169E395F00016ACA /* OCTCommitComment.m */,
 			);
@@ -1287,6 +1297,7 @@
 				8829F2BF17A0DF5300F06991 /* OCTAuthorization.h in Headers */,
 				7A1F647117F12851008155CF /* OCTReviewComment.h in Headers */,
 				8848E19D16AF630B005449AB /* OCTNotification.h in Headers */,
+				7A5503DA17D50120007E8D0E /* OCTCommit.h in Headers */,
 				D0772E7316BD27B5009DFF72 /* NSDateFormatter+OCTFormattingAdditions.h in Headers */,
 				D0772E7716BD2A06009DFF72 /* NSValueTransformer+OCTPredefinedTransformerAdditions.h in Headers */,
 				9CB0588917933F26002CF498 /* OCTSymlinkContent.h in Headers */,
@@ -1338,6 +1349,7 @@
 				D08722A0169E3D6000016ACA /* OctoKit.h in Headers */,
 				8829F2C017A0DF5300F06991 /* OCTAuthorization.h in Headers */,
 				8848E19E16AF630B005449AB /* OCTNotification.h in Headers */,
+				7A5503DB17D50120007E8D0E /* OCTCommit.h in Headers */,
 				D0772E7416BD27B6009DFF72 /* NSDateFormatter+OCTFormattingAdditions.h in Headers */,
 				D0772E7816BD2A06009DFF72 /* NSValueTransformer+OCTPredefinedTransformerAdditions.h in Headers */,
 				9CB0588A17933F26002CF498 /* OCTSymlinkContent.h in Headers */,
@@ -1769,6 +1781,7 @@
 				D0872189169E395F00016ACA /* OCTPlan.m in Sources */,
 				D087218D169E395F00016ACA /* OCTPublicKey.m in Sources */,
 				D0872191169E395F00016ACA /* OCTPullRequest.m in Sources */,
+				7A5503DC17D50120007E8D0E /* OCTCommit.m in Sources */,
 				D0872195169E395F00016ACA /* OCTPullRequestComment.m in Sources */,
 				D0872199169E395F00016ACA /* OCTPullRequestCommentEvent.m in Sources */,
 				9CB0587F17933F26002CF498 /* OCTDirectoryContent.m in Sources */,
@@ -1804,6 +1817,7 @@
 				D08721C6169E396F00016ACA /* OCTIssueSpec.m in Sources */,
 				D08721C8169E396F00016ACA /* OCTObjectSpec.m in Sources */,
 				D08721D0169E398C00016ACA /* OCTOrganizationSpec.m in Sources */,
+				7A5503DD17D50120007E8D0E /* OCTCommit.m in Sources */,
 				D08721D2169E398C00016ACA /* OCTPullRequestCommentSpec.m in Sources */,
 				D08721D4169E398C00016ACA /* OCTPullRequestSpec.m in Sources */,
 				88CD633317D8DA5A00E2CD47 /* OCTTreeSpec.m in Sources */,
@@ -1844,6 +1858,7 @@
 				D087218A169E395F00016ACA /* OCTPlan.m in Sources */,
 				D087218E169E395F00016ACA /* OCTPublicKey.m in Sources */,
 				D0872192169E395F00016ACA /* OCTPullRequest.m in Sources */,
+				7A5503DE17D50120007E8D0E /* OCTCommit.m in Sources */,
 				D0872196169E395F00016ACA /* OCTPullRequestComment.m in Sources */,
 				D087219A169E395F00016ACA /* OCTPullRequestCommentEvent.m in Sources */,
 				9CB0588017933F26002CF498 /* OCTDirectoryContent.m in Sources */,
@@ -1879,6 +1894,7 @@
 				D08721C7169E396F00016ACA /* OCTIssueSpec.m in Sources */,
 				D08721C9169E396F00016ACA /* OCTObjectSpec.m in Sources */,
 				D08721D1169E398C00016ACA /* OCTOrganizationSpec.m in Sources */,
+				7A5503DF17D50120007E8D0E /* OCTCommit.m in Sources */,
 				D08721D3169E398C00016ACA /* OCTPullRequestCommentSpec.m in Sources */,
 				D08721D5169E398C00016ACA /* OCTPullRequestSpec.m in Sources */,
 				88CD633417D8DA5A00E2CD47 /* OCTTreeSpec.m in Sources */,

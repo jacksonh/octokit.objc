@@ -307,6 +307,9 @@ static NSString * const OCTClientOneTimePasswordHeaderField = @"X-GitHub-OTP";
 				// In theory, this makes parsing code forward-compatible with
 				// API additions.
 				if (![error.domain isEqual:MTLJSONAdapterErrorDomain] || error.code != MTLJSONAdapterErrorNoClassFound) {
+                    NSLog (@"ERROR CLASS:  %@  JSON DICT:  %@", resultClass, JSONDictionary);
+                    NSLog (@"ERRROR INFO:  %@   %@", error, [error userInfo]);
+                    [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:JSONDictionary error:&error];
 					[subscriber sendError:error];
 				}
 
@@ -385,11 +388,10 @@ static NSString * const OCTClientOneTimePasswordHeaderField = @"X-GitHub-OTP";
 	if ([operation.responseJSON isKindOfClass:NSDictionary.class]) {
 		responseDictionary = operation.responseJSON;
 	} else {
-		NSLog(@"Unexpected JSON for error response: %@", operation.responseJSON);
+		NSLog(@"Unexpected JSON for error response: %@", operation.responseString);
 	}
 
 	NSString *message = responseDictionary[@"message"];
-	
 	if (HTTPCode == 401) {
 		NSError *errorTemplate = self.class.authenticationRequiredError;
 

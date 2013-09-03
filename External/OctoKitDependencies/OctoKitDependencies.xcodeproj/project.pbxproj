@@ -641,6 +641,7 @@
 				DSTROOT = /tmp/AFNetworking.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "AFNetworking/AFNetworking-Prefix.pch";
+				"OTHER_CFLAGS[arch=*]" = "-fobjc-arc";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AFNetworking;
 			};
