@@ -8,7 +8,7 @@
 
 #import "OCTIssue.h"
 #import "OCTPullRequest.h"
-#import <ReactiveCocoa/EXTKeyPathCoding.h>
+#import <libextobjc/EXTKeyPathCoding.h>
 
 @interface OCTIssue ()
 
