@@ -8,7 +8,7 @@
 
 #import "OCTObject.h"
 #import "OCTServer.h"
-#import <ReactiveCocoa/EXTKeyPathCoding.h>
+#import <libextobjc/EXTKeyPathCoding.h>
 #import "OCTObject+Private.h"
 
 @interface OCTObject ()
